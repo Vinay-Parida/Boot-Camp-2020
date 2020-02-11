@@ -69,6 +69,7 @@ ul li{
 .card{
 	border: 1px solid black;
 	text-align: center;
+	background-color: #eeeeee;
 }
 .gallery{
 	color: white;
