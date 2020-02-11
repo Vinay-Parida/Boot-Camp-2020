@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<h2><a href="">TO THE NEW</a></h2>
+		</nav>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Quick Help</a></li>
+		</ul>
+	</header>
+
+	<hr>
+
+	<div class= form-header>
+		<h3>Bug Report</h3>
+	</div>
+
+	<div class= form-div>
+		<form>
+			<div>
+				<label >Title: *</label><br>
+	    		<input type="text" id = "title-space">
+	    	</div>
+
+	    	<div>
+	    		<label>Description: * </label><br>
+	    		<textarea id="desc"></textarea>
+	    	 </div>
+
+	    	 <div>
+	    		<label>Operating System</label><br>
+				    <select class=select-space>
+				      <option value="Win XP">Windows XP</option>
+				      <option value="ios">iOS</option>
+				      <option value="linux">Linux</option>
+				    </select>
+			</div>
+
+			<div>
+			<label>Product</label><br>
+			    <select class=select-space>
+			      <option value="formoid">Formoid</option>
+			      <option value="something">Something</option>
+			      <option value="else">Else</option>
+			    </select>
+			</div>
+
+			<div>
+				<label>Version *</label><br>
+				<input id=version>
+			</div>
+
+			<div>
+				<label>Licences:</label> <!-- Ye checkbox me dikat hai-->
+
+				<div class=radio>
+					<input type="radio" name="">
+					<label>Free</label>
+				
+					<input type="radio" name="">
+					<label>Buisness</label>
+				</div>
+			</div>
+
+			<div>
+			<label>Severity</label><br>
+			    <select class=select-space>
+			      <option value="critical">Critical</option>
+			      <option value="amaged">Damaged</option>
+			      <option value="sevicing">Servicing</option>
+			    </select>
+			</div>
+
+			<div>
+				<label>Attachments:</label><br>
+				<input type="file" id="attach">
+			</div>
+		</form>
+
+		<div class= form-footer>
+			<input type="submit" id="btn" value="Send">
+		</div>
+	</div>
+</body>
+</html>

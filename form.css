@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+a{
+	color: #3cbc9c;
+	text-decoration: none;
+}
+ ul li{
+ 	list-style-type:none;
+ 	display: inline-block;
+ 	padding-left: 5px;
+ }
+
+ hr{
+ 	padding:10px;
+ }
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+form div{
+	border-radius: 5px;
+	padding: 5px;
+}
+
+form{
+	border: 1px solid #bbc3ca;
+	width:52.75%;  /*Don't know how*/
+	margin: auto;
+}
+
+.form-div{
+	width: 50%
+	margin: auto;
+}
+
+.form-footer{
+	color: white;
+	margin: auto;
+	width: 50%;
+	background-color: #edeff1;
+	border-radius: 0px 0px 5px 5px;
+	padding: 25px 21px 25px 21px;
+	border: 1px solid #bbc3ca;
+}
+
+#btn{
+	width: 10%;
+	color: white;
+	background-color: #3cbc9c;
+	border-radius: 5px;
+	height: 25px;
+	float: right;
+	margin
+}
+
+.form-header{
+	color: white;
+	margin: auto;
+	width: 50%;
+	background-color: #bbc3ca;
+	border-radius: 5px 5px 0px 0px;
+	padding: 20px;
+}
+
+
+#title-space{
+	margin: auto;
+	width: 100%;
+	border-radius: 5px; /*	Shadow hatana hai */
+	height: 25px;	 
+}
+
+#desc{
+	margin: auto;
+	width: 100%;
+	border-radius: 5px;
+	height: 100px;	
+}
+
+.select-space{
+	background-color: #3cbc9c;
+	margin: auto;
+	width: 100%;
+	border-radius: 5px;
+	height: 25px;	
+}
+
+#version{
+	margin: auto;
+	width: 30%;
+	border-radius: 5px; /*	Shadow hatana hai */
+	height: 25px;
+	box-shadow: none;
+}
+
+.radio{
+	display: flex;
+	justify-content: space-around;
+}
+
+#attach{
+	margin: auto;
+	width: 100%;
+	border-radius: 5px;
+	height: 25px;
+}
