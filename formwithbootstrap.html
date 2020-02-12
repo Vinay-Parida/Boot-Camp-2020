@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="formwithbootstrap.css">
+
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg d-flex justify-content-between">
+			<a href="" class="navbar-brand">TO THE NEW</a>
+			<div class="navbar-nav">
+				<a href="" class="nav-item nav-link">Home</a>
+				<a href="" class="nav-item nav-link">Quick Help</a>
+			</div>
+		</nav>
+		<hr>
+	</header>
+
+	<main>
+		<div class="col-sm-4 offset-sm-4 border">
+			<div class="row bg-secondary rounded-top p-3 text-light">
+				Bug Report
+			</div>
+			<form>
+				<div class="form-group">
+					<label class="pt-2">Title: *</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Description: *</label>
+					<textarea class="form-control"></textarea>
+				</div>
+				<div>
+					<label>Operating System:</label>
+					<select class="form-control select">
+						<option>Windows XP</option>
+						<option>Linux</option>
+						<option>iOS</option>
+					</select>
+				</div>
+				<div>
+					<label>Product:*</label>
+					<select class="form-control select">
+						<option>Formoid</option>
+						<option>Not Formoid</option>
+						<option>Extra Formoid</option>
+					</select>
+				</div>
+				<div>
+					<label>Version:*</label>
+					<input type="text" class="form-control col-3">
+				</div>
+				<div>
+					<label>Licenses:</label>
+					<div class="row ml-1">
+						<div class="col-sm-4">
+							<input class="form-check-input" type="radio">
+							<label class="form-check-label">
+								Free
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input class="form-check-input" type="radio">
+							<label class="form-check-label">
+								Buisness
+							</label>
+						</div>
+					</div>
+				</div>
+				<div>
+					<label>Severity:</label>
+					<select class="form-control select">
+						<option>Critical</option>
+						<option>Not Critical</option>
+						<option>Extra Crirical</option>
+					</select>
+				</div>
+				<div class="pb-2">
+					<label>Attachment:</label>
+					<div class="custom-file">
+						<input type="file" class="custom-file-input">
+						<label class="custom-file-label">No File Selected</label>
+					</div>
+				</div>
+			</form>
+			<div class="row bg-secondary rounded-bottom p-2 text-light d-flex justify-content-end">
+				<button type="submit" class="btn btn-primary">Send</button>
+			</div>
+
+
+		</div>	
+	</main>
+</body>
+
+</html>

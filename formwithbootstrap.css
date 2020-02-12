@@ -1,0 +1,18 @@
+.select{
+	color:white;
+	background-color: #3cbc9c;
+}
+
+select{
+	margin-bottom: 10px;
+}
+
+.form-header{
+	background-color: ##bbc3ca;
+	color: white;
+}
+
+.btn{
+	background-color: #3cbc9c;
+	color: white;
+}
