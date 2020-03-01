@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+//sourceSets {
+//    main{
+//        java.srcDirs = ['src/main/javaCode1', 'src/main/javaCode2']
+//    }
+//} for question 5
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+//    compile group: 'junit', name: 'junit', version: '4.12'
+//    runtime group: 'junit', name: 'junit', version: '4.12'
+//    testRuntime group: 'junit', name: 'junit', version: '4.12'
+
+}
+
+//jar{
+//    manifest{
+//        attributes 'Main-Class': 'HelloWorld'
+//    }
+//} used for Q3
+
+class DatePlugin implements Plugin<Project>{
+    void apply(Project p){
+        p.task('DateTask'){
+            dependsOn ('build')
+            doLast{
+                println "Date: " + new Date()
+            }
+        }
+    }
+}
+apply plugin: DatePlugin
