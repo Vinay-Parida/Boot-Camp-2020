@@ -1,0 +1,39 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.5.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-hateoas'   //For HATEOAS Implementation
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.2.5.RELEASE'  //For Spring Boot Actuator
+	compile group: 'org.springframework.data', name: 'spring-data-rest-hal-browser', version: '3.2.5.RELEASE'  //
+	
+
+//	compile group: 'org.springframework.hateoas', name: 'spring-hateoas', version: '0.16.0.RELEASE'
+
+}
+
+test {
+	useJUnitPlatform()
+}
