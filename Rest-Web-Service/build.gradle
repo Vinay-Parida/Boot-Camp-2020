@@ -1,0 +1,49 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.5.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-hateoas'   //For HATEOAS Implementation
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+	//Part-1-10 Configure actuator in your project to check the health of application and get the information about various beans configured in your application.
+//	compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.2.5.RELEASE'
+//	compile group: 'org.springframework.data', name: 'spring-data-rest-hal-browser', version: '3.2.5.RELEASE'
+
+
+	//Part-2-Q3 Create POST Method to create user details which can accept XML for user creation.
+	//Part-2-Q4. Create GET Method to fetch the list of users in XML format.
+	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml'    //For taking input/requestbody in XML
+
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.4.0'
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.4.0'
+	compile 'org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE'
+
+
+
+}
+
+test {
+	useJUnitPlatform()
+}
